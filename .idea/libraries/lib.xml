@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Pharmacey/dist/lib/com.lowagie.text-2.1.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Pharmacey/dist/lib/jcommon-1.0.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Pharmacey/dist/lib/commons-digester-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Pharmacey/dist/lib/org-apache-commons-logging.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Pharmacey/dist/lib/org.apache.commons.collections.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Pharmacey/dist/lib/jasperreports-fonts-6.4.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Pharmacey/dist/lib/jasperreports-6.4.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Pharmacey/dist/lib/jasperreports-javaflow-6.4.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Pharmacey/dist/lib/jfoenix.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Pharmacey/dist/lib/mysql-connector-java-5.1.23-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Pharmacey/dist/lib/itextpdf-5.3.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Pharmacey/dist/lib/jfreechart-1.0.13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Pharmacey/dist/lib/commons-beanutils-1.8.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Pharmacey/dist/lib/itext-2.1.7-src.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

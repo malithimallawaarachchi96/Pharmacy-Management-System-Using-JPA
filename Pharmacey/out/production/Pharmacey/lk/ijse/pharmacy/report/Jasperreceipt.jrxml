@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2018-06-29T11:51:06 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Jasperreceipt" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d62f32f1-a3b9-41e7-9f50-64f10ffe6152">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (4)"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w1" value="633"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w2" value="353"/>
+	<parameter name="ID" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[ select * , sum(qty*Unitprice)as Total from receipt where receiptID=$P{ID} ]]>
+	</queryString>
+	<field name="ReceiptID" class="java.lang.String"/>
+	<field name="PatientID" class="java.lang.String"/>
+	<field name="PID" class="java.lang.String"/>
+	<field name="MID" class="java.lang.String"/>
+	<field name="Unitprice" class="java.math.BigDecimal"/>
+	<field name="Qty" class="java.lang.Integer"/>
+	<field name="Date" class="java.sql.Date"/>
+	<field name="Total" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="71" splitType="Stretch">
+			<staticText>
+				<reportElement x="210" y="0" width="80" height="30" forecolor="#000000" uuid="ae494566-6165-481e-8118-329b22f9fa5f"/>
+				<textElement>
+					<font fontName="Britannic Bold" size="20"/>
+				</textElement>
+				<text><![CDATA[Receipt]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="310" splitType="Stretch">
+			<textField>
+				<reportElement x="120" y="50" width="69" height="30" uuid="984dfb70-b3d2-4a28-9c57-769478d9446d"/>
+				<textFieldExpression><![CDATA[$F{PatientID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="90" width="69" height="30" uuid="ad9b222f-62df-4921-b21d-a76782e3bef4"/>
+				<textFieldExpression><![CDATA[$F{PID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="128" width="69" height="30" uuid="e9e5484e-fbca-4385-ba3d-f4b5db769b7d"/>
+				<textFieldExpression><![CDATA[$F{MID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="168" width="69" height="30" uuid="8a99007d-0365-41b2-b490-358af8e95c1b"/>
+				<textFieldExpression><![CDATA[$F{Unitprice}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="240" width="69" height="30" uuid="afab1578-7ff1-4e8c-8e00-10dc4fd8a7be"/>
+				<textFieldExpression><![CDATA[$F{Date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="280" width="69" height="30" uuid="e6da192c-389f-45e7-9da4-805b89f28e90"/>
+				<textFieldExpression><![CDATA[$F{Total}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="15" width="81" height="30" uuid="ef5bc37e-9fad-4677-adf4-fceee64a49f9"/>
+				<text><![CDATA[ReceiptID]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="120" y="15" width="81" height="30" uuid="89fddc2b-fd98-46df-9f8f-a7a7894c784e"/>
+				<textFieldExpression><![CDATA[$F{ReceiptID}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="2" y="50" width="69" height="30" uuid="6ef4c504-6f86-4911-8289-c901ff0b4ffb"/>
+				<text><![CDATA[PatientID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="90" width="69" height="30" uuid="75f0aada-33d1-4c95-8c79-fdcb8289b7b1"/>
+				<text><![CDATA[PID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="128" width="69" height="30" uuid="9b381b75-6d2e-4f59-90b3-129e7421333e"/>
+				<text><![CDATA[MID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="168" width="69" height="30" uuid="8e3891a3-dcc1-463f-b2e9-8808794e8ee6"/>
+				<text><![CDATA[Unitprice]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="200" width="69" height="30" uuid="f28fa227-7c94-4a5c-8fd8-5dc3d221e43b"/>
+				<text><![CDATA[Qty]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="243" width="69" height="30" uuid="76214af6-68d6-46ba-824c-ca593ded2392"/>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="120" y="198" width="69" height="30" uuid="298315d1-d3aa-4527-a5fd-4126cbc8f05b"/>
+				<textFieldExpression><![CDATA[$F{Qty}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="2" y="280" width="69" height="30" uuid="c2d104fd-2114-4601-8461-b034450b1a80"/>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
